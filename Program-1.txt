@@ -1,4 +1,4 @@
-// Sqaure of 0<number input and find largest reminder of that each sqaure number
+// Sqaure of 0<number input and find largest reminder of that each sqaure number>
 
 #include <iostream>
 using namespace std;
