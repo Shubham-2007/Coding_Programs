@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+/* start: global styles */
+body{
+    font-family: Sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+*{
+    outline: none;  
+    margin: 0px;
+    padding: 0px;
+}
+
+*:not(.slick-track):not(.slick-list){
+    transition: 0.4s;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 20px 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-title{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 32px; 
+    color: #008080;  
+}
+/* end: global styles */
+
+/* start: header styles */
+#header-hero-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    z-index: 3;
+}
+
+#logo {
+    font-family: Sans-serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.hamburger-menu {
+    border: none;
+    background-color: transparent;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+header ul {
+    list-style-type: none;
+    line-height: 60px;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#close-flyout {
+    display: none;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+header ul.is-sticky li a {
+    color: #000;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #008080;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a.active {
+    color: #fff;
+}
+/* end: header styles */
+
+/* start: hero section styles */
+#hero {
+    background-image: url('https://static.businessworld.in/article/article_extra_large_image/1586153753_q4m8WE_200324_D_HN545_003.JPG');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    animation:slider 25s infinite linear;
+}
+
+@keyframes slider{
+    0%{ background-image: url('https://static.businessworld.in/article/article_extra_large_image/1586153753_q4m8WE_200324_D_HN545_003.JPG'); }
+    25%{ background-image: url('https://cdn.pixabay.com/photo/2020/03/16/15/28/virus-4937340_960_720.jpg'); }
+    50%{ background-image: url('https://cdn.pixabay.com/photo/2020/03/14/17/05/virus-4931227_960_720.jpg'); }
+    75%{ background-image: url('https://cdn.pixabay.com/photo/2020/04/21/03/45/covid-19-5070658_960_720.jpg'); }
+}
+/* end: hero section styles */
+
+
+/*start: symptoms section*/
+.symptoms{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f5f5;
+}
+.symptoms-image-div-1{
+    width: 625px;
+    height: 643px;
+    margin: 20px auto;    
+}
+.symptoms-image-div-2{
+    width: 297px;
+    margin: 20px auto; 
+    display: none;   
+}
+.symptoms-image-div-top{
+    padding-bottom: 0px;
+}
+.symptoms-image-div-bottom{
+    padding-top: 0px;
+}
+/*end: symptoms section*/
+
+/*start: prevention section*/
+.prevention{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f5f5;
+}
+#prevention-p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #a9a9a9;
+    margin-top: 20px;
+    text-align: center; 
+}
+.prevention-image-div-1{
+    width: 867px;
+    height: 411px;
+    margin: 20px auto;   
+}
+.prevention-image-div-2{
+    width: 408px;
+    margin: 20px auto;
+    display: none;     
+}
+.prevention-image-div-top{
+    padding-top: 0px;
+}
+.prevention-image-div-bottom{
+    padding-top: 0px;
+}
+/*end: prevention section*/
+
+/* start: properties styles */
+#properties{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f5f5;
+}
+
+#properties .container {
+    position: relative;
+}
+
+#properties-slider a.slick-arrow {
+    color: #334d4d;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#properties-slider a.slick-prev {
+    right: 80px;
+}
+
+#properties-slider a.slick-next {
+    
+}
+
+#properties-slider .slick-slide {
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+#properties-slider .property-details {
+    padding: 1rem;
+}
+
+#properties-slider .price {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+/* end: properties styles */
+
+/* start: best real estate company styles */
+#the-best{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f5f5;
+}
+    
+#the-best .flex > div {
+    width: 80%;
+}
+
+#the-best ul {
+    padding-left: 20px;
+    margin-bottom: 4rem;
+}
+
+#the-best ul li {
+    margin: 10px 0;
+}
+.faqscontainer{
+    margin: 20px auto;
+    max-width: 95%;
+    width: 100%;
+}
+
+p.accordion {
+    background-color: #c2d6d6;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 2px;
+    font-weight:bold;
+    background-color: #c2d6d6 !important;
+    padding: 10px;
+    font-size:1.2em;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover{
+    /*background-color: green;*/
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 0 18px;
+    background-color: #e0ebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+    line-height: 1.5;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+/* end: best real estate company styles */
+
+/* start: services styles */
+#services {
+    max-width: 1366px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #f0f5f5;
+}
+
+#services .flex{
+    max-width: 1140px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+}
+
+#services .flex img{
+    border-radius: 2%;
+    box-shadow: 3px 3px 3px grey;
+}
+
+#services .flex img:hover {
+    transform: rotate(10deg) scale(1.1);
+    transition: 0.9s;
+    flex-wrap:wrap;
+}
+.services-card-right{
+    margin: auto;
+}
+.services-card-right h4{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+/* end: services styles */
+
+/* start: footer styles */
+footer {
+    background: #333;
+    padding: 2rem 0;
+}
+
+footer .flex {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #777;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+footer .footer-about {
+    width: 35%;
+}
+
+footer .footer-about p {
+    color: #777;
+    line-height: 1.5;
+}
+
+footer .footer-quick-links {
+    width: 16%;
+}
+
+footer .footer-quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-quick-links ul li {
+    margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+    color: #fff;
+}
+
+footer .footer-subscribe {
+    width: 25%;
+}
+
+footer .footer-subscribe ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-subscribe ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+    margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .footer-subscribe ul li #fb:hover {
+    color:  #3b5998;
+}
+footer .footer-subscribe ul li #tw:hover {
+    color:  #55acee;
+}
+footer .footer-subscribe ul li #insta:hover {
+    color:  #C13584;
+}
+footer .footer-subscribe ul li #in:hover {
+    color:  #0077b5;
+}
+/* end: footer styles */
+
+/* start: media query */ 
+
+/*for symptoms sec.*/
+@media (max-width: 771px){
+    .symptoms-image-div-1{
+        display: none;
+    }
+    .symptoms-image-div-2{
+        display: block;
+    }
+}
+
+/* for prevention sec. */
+@media (max-width: 1010px){
+    .prevention-image-div-1{
+        display: none;
+    }
+    .prevention-image-div-2{
+        display: block;
+    }
+}
+
+/* for header*/
+@media (max-width: 991px) {
+    #logo {
+        top: 1px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #fff;
+        right: -100%;
+        top: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100%;
+        width: 300px;
+        box-sizing: border-box;
+        box-shadow: 5px 0 10px 3px #999;
+    }
+
+    #close-flyout {
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        font-size: 30px;
+        color: #777;
+        cursor: pointer;
+        display: block;
+        line-height: 1;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        color: #212529;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #008080;
+    }
+}
+
+@media (max-width: 767px){
+    
+    p{
+        font-size: 0.8rem;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    #the-best .flex > img {
+        display: none;
+    }
+
+    #the-best .flex > div {
+        width: 100%;
+    }
+
+    #properties .container:before {
+        top: 2px;
+        font-size: 0.85rem;
+    }
+
+    #properties-slider a.slick-arrow {
+        font-size: 0.85rem;
+    }
+
+    #services .flex > div {
+        width: 48%;
+    }
+
+    footer {
+        padding: 6rem 0;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+
+    footer .flex > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    footer .flex > div:first-child {
+        margin-top: 0;
+    }
+
+    footer .footer-about p {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    #services {
+        padding: 4rem 0 3rem;
+    }
+
+    #services .flex > div {
+        width: 100%;
+    }
+
+    footer{
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+  nav ul{
+    width: 200px;
+  }
+}
