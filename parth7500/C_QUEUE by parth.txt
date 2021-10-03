@@ -1,0 +1,112 @@
+#include<stdio.h>
+#include<conio.h>
+#define n 3
+void insert(int q[n],int y);
+void display (int q[n]);
+void delet(int q[n]);
+int y,q[n],i,f=0,r=0;
+void main()
+{
+	int ch,y;
+	clrscr();
+do
+	{
+	printf("\n1 insert\n2 delete\n3 display");
+	printf("\n select your choice:");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+	case 1:
+	printf("enter the value of y =");
+	scanf("%d",&y);
+	insert(q,y);
+	 break;
+	case 2:
+	 delet(q);
+	 break;
+	 case 3:
+	 display(q);
+	 break;
+	 default:
+		printf("wrong choice:");
+		break;
+	}
+	}
+		while(ch<=3);
+		getch();
+	}
+	void insert(int q[],int y)
+	{
+	if(r==n)
+	{
+				r=1;
+	}
+	else
+	     {
+				r=r+1;
+	}
+	if(f==r)
+	{
+	printf("Queue is overflow:");
+	}
+	else
+	{
+				q[r]=y;
+				printf("%d",r);
+	}
+	if(f==0)
+	{
+	    f=1;
+	}
+}
+		      void delet(int q[n])
+		{
+			if(f==0)
+		{
+			printf("Queue id underflow:");
+		}
+		else
+		{
+			y=q[f];
+			printf("%d",f);
+			printf("Value deleted from queue is %d",y);
+		}
+		if(f==n)
+		{
+			f=1;
+		}
+			else
+		{
+			f=f+1;
+		}
+
+
+	if(f==r)
+		{
+			f=r=0;
+			}
+		      }
+		void display(int q[])
+		{
+			if(f==0)
+			{
+			    printf("Queue is empty");
+			}
+			else if(f<=r)
+			{
+			for(i=f;i<=n;i++)
+
+			{
+			y=q[i];
+			printf("value of queue is%d",y);
+			}
+			}
+			else
+			{
+		for(i=1;i<=r;i++)
+		{
+			y=q[i];
+			printf("value of queue is %d",y);
+			}
+			}
+		}
