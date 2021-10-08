@@ -1,0 +1,6 @@
+protobuf==3.11.2
+PyQt5==5.14.1
+PyQt5-sip==12.7.1
+PyRect==0.1.4
+PySide2==5.14.1
+shiboken2==5.14.1
